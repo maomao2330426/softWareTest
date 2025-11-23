@@ -31,4 +31,7 @@ public interface AdminMapper {
 
     @Delete("DELETE FROM admin WHERE admin_id = #{adminId}")
     int delete(Integer adminId);
+
+    @Delete("DELETE FROM admin WHERE username = #{username}")
+    int deleteByUsername(String username);
 }

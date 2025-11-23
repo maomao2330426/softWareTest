@@ -20,4 +20,8 @@ public class User {
     private String password;
     private String status; // ACTIVE, INACTIVE
     private LocalDateTime createdAt;
+
+    public Integer getId() {
+        return userId;
+    }
 }

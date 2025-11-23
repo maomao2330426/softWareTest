@@ -22,4 +22,8 @@ public class CustomerService {
     private String email;
     private String status; // ONLINE, OFFLINE, BUSY, ACTIVE, INACTIVE
     private LocalDateTime createdAt;
+
+    public Integer getId() {
+        return csId;
+    }
 }

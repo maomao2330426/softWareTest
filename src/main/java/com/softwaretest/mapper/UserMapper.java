@@ -38,4 +38,7 @@ public interface UserMapper {
 
     @Delete("DELETE FROM user WHERE user_id = #{userId}")
     int delete(Integer userId);
+
+    @Delete("DELETE FROM user WHERE username = #{username}")
+    int deleteByUsername(String username);
 }

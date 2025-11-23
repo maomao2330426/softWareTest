@@ -40,4 +40,7 @@ public interface CustomerServiceMapper {
 
     @Delete("DELETE FROM customer_service WHERE cs_id = #{csId}")
     int delete(Integer csId);
+
+    @Delete("DELETE FROM customer_service WHERE username = #{username}")
+    int deleteByUsername(String username);
 }
