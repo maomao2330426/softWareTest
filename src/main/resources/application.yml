@@ -27,6 +27,11 @@ server:
   servlet:
     context-path: /
 
+# JWT配置
+jwt:
+  secret: mySecretKeyForJWT2024SoftwareTestProject
+  expiration: 86400 # 24小时
+
 # 日志配置
 logging:
   level:

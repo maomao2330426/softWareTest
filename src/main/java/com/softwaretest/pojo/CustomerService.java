@@ -15,9 +15,11 @@ import java.time.LocalDateTime;
 public class CustomerService {
     private Integer csId;
     private String name;
+    private String username;
+    private String password;
     private String department; // 部门
     private String category; // 处理类型/专长领域（技术支持、账户问题、产品咨询等）
     private String email;
-    private String status; // ONLINE, OFFLINE, BUSY
+    private String status; // ONLINE, OFFLINE, BUSY, ACTIVE, INACTIVE
     private LocalDateTime createdAt;
 }

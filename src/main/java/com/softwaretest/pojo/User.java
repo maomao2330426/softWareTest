@@ -17,5 +17,7 @@ public class User {
     private String phone;
     private String email;
     private String username;
+    private String password;
+    private String status; // ACTIVE, INACTIVE
     private LocalDateTime createdAt;
 }

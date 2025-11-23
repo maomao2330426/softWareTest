@@ -17,6 +17,9 @@ public interface CustomerServiceMapper {
     @Select("SELECT * FROM customer_service WHERE category = #{category} AND status = 'ONLINE' LIMIT 1")
     CustomerService findAvailableByCategory(String category);
 
+    @Select("SELECT * FROM customer_service WHERE username = #{username}")
+    CustomerService findByUsername(String username);
+
     @Select("SELECT * FROM customer_service WHERE department = #{department}")
     List<CustomerService> findByDepartment(String department);
 

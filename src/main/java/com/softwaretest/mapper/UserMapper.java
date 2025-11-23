@@ -21,6 +21,9 @@ public interface UserMapper {
     @Select("SELECT * FROM user WHERE phone = #{phone}")
     User findByPhone(String phone);
 
+    @Select("SELECT * FROM user WHERE username = #{username}")
+    User findByUsername(String username);
+
     @Select("SELECT * FROM user")
     List<User> findAll();
 

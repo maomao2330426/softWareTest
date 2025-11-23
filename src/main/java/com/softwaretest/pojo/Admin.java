@@ -16,6 +16,8 @@ public class Admin {
     private Integer adminId;
     private String username;
     private String email;
+    private String password;
     private Integer roleLevel; // 1-超级管理员, 2-普通管理员
+    private String status; // ACTIVE, INACTIVE
     private LocalDateTime createdAt;
 }
