@@ -79,7 +79,7 @@ public class AdminController {
     }
 
     /**
-     * 根据分类获取工单
+     根据分类获取工单
      */
     @GetMapping("/tickets/category/{category}")
     public Response<List<Ticket>> getTicketsByCategory(@PathVariable String category) {
