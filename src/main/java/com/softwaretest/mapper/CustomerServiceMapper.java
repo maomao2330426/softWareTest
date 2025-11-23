@@ -26,12 +26,12 @@ public interface CustomerServiceMapper {
     @Select("SELECT * FROM customer_service")
     List<CustomerService> findAll();
 
-    @Insert("INSERT INTO customer_service(name, department, category, email, status, created_at) " +
-            "VALUES(#{name}, #{department}, #{category}, #{email}, #{status}, #{createdAt})")
+    @Insert("INSERT INTO customer_service(name, username, password, department, category, email, status, created_at) " +
+            "VALUES(#{name}, #{username}, #{password}, #{department}, #{category}, #{email}, #{status}, #{createdAt})")
     @Options(useGeneratedKeys = true, keyProperty = "csId")
     int insert(CustomerService customerService);
 
-    @Update("UPDATE customer_service SET name=#{name}, department=#{department}, " +
+    @Update("UPDATE customer_service SET name=#{name}, username=#{username}, department=#{department}, " +
             "category=#{category}, email=#{email}, status=#{status} WHERE cs_id=#{csId}")
     int update(CustomerService customerService);
 
